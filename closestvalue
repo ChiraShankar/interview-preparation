@@ -1,0 +1,7 @@
+const needle = 8;                                 // comparing the array values with this
+
+const closest = [1, 10, 7, 2, 4].reduce((a, b) => {
+    return Math.abs(b - needle) < Math.abs(a - needle) ? b : a;                   //The Math.abs() function returns the absolute value of a number. That is, it returns x if x is positive or zero, and the negation of x if x is negative.
+});
+
+console.log(closest); // Output: 7
